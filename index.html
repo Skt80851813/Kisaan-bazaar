@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176b3a">
+  <title>KISAAN BAZAAR | किसान का अपना बाजार</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">🌾</span><span><b>KISAAN BAZAAR</b><small>खेत से सीधे आपके घर तक</small></span></a>
+  <div class="search"><input id="searchInput" placeholder="सब्जी, फल, अनाज या किराना खोजें..." aria-label="सामान खोजें"><button id="searchBtn">खोजें</button></div>
+  <div class="header-actions"><button class="outline" id="farmerTop">किसान बनें</button><button class="cart-btn" id="cartTop">🛒 <span>कार्ट</span> <i id="cartCount">0</i></button></div>
+</header>
+<nav class="nav">
+  <a href="#home">होम</a><a href="#categories">कैटेगरी</a><a href="#products">सामान खरीदें</a><a href="#sell">सामान बेचें</a><a href="#how">कैसे काम करता है</a><a href="#contact">संपर्क</a>
+</nav>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy"><span class="eyebrow">भारत का किसान-ग्राहक बाजार</span><h1>किसान की मेहनत,<br><em>सीधे आपके घर तक।</em></h1><p>ताजी सब्जियाँ, फल, फूल, अनाज, दाल, मसाले और रोज़मर्रा का किराना — किसानों और ग्राहकों को एक ही जगह जोड़ने वाला बाजार।</p><div class="hero-buttons"><a class="primary" href="#products">सामान देखें</a><a class="light-btn" href="#sell">अपनी उपज बेचें</a></div><div class="trust"><span>✓ सीधे विक्रेता से</span><span>✓ कई कैटेगरी</span><span>✓ पूरे भारत के लिए</span></div></div>
+  <div class="hero-art"><div class="produce-card"><div class="produce-emoji">🥬 🍅 🥕</div><b>ताज़ी उपज</b><span>हर दिन नया सामान</span></div><div class="round-stamp">किसान<br>का अपना<br>बाजार</div></div>
+</section>
+<section class="benefits">
+  <div><span>🌱</span><b>किसानों के लिए मंच</b><small>अपनी उपज की लिस्टिंग करें</small></div>
+  <div><span>🛍️</span><b>एक जगह सब कुछ</b><small>ग्रोसरी और खेती की उपज</small></div>
+  <div><span>📦</span><b>ऑर्डर की सुविधा</b><small>ग्राहक सीधे ऑर्डर भेजें</small></div>
+  <div><span>🇮🇳</span><b>ऑल इंडिया</b><small>भारत भर के लिए बनाया गया</small></div>
+</section>
+<section class="section" id="categories">
+  <div class="section-head"><div><span class="eyebrow">अपनी पसंद चुनें</span><h2>खरीदारी की कैटेगरी</h2></div><p>ताज़ा उपज से लेकर रोज़मर्रा के किराने तक</p></div>
+  <div class="category-grid" id="categoryGrid"></div>
+</section>
+<section class="section products-section" id="products">
+  <div class="section-head"><div><span class="eyebrow">बाजार से चुनें</span><h2>उपलब्ध सामान</h2></div><div class="filters"><select id="categoryFilter"><option value="सभी">सभी कैटेगरी</option></select><select id="sortFilter"><option value="default">सामान्य क्रम</option><option value="low">कम कीमत पहले</option><option value="high">ज्यादा कीमत पहले</option></select></div></div>
+  <div class="product-grid" id="productGrid"></div>
+  <p class="empty hidden" id="emptyProducts">इस कैटेगरी में अभी सामान नहीं मिला। किसान अपना सामान जोड़ सकते हैं।</p>
+</section>
+<section class="seller-band" id="sell">
+  <div><span class="eyebrow">किसान भाइयों और बहनों के लिए</span><h2>अपनी उपज का सही बाजार खोजें</h2><p>किसान रजिस्ट्रेशन करें और अपनी फसल, सब्जी, फल या किराना सामान की जानकारी ग्राहकों तक पहुँचाएँ।</p><button class="white-btn" id="openFarmer">किसान रजिस्ट्रेशन / सामान बेचें</button></div>
+  <div class="seller-illustration">👩‍🌾 <span>🌾</span> 🧺</div>
+</section>
+<section class="section steps" id="how"><div class="section-head"><div><span class="eyebrow">आसान प्रक्रिया</span><h2>किसान बाजार कैसे काम करता है?</h2></div></div><div class="step-grid"><article><b>01</b><span>👨‍🌾</span><h3>किसान जुड़ें</h3><p>अपना नाम, मोबाइल और गांव/शहर दर्ज करें।</p></article><article><b>02</b><span>📸</span><h3>सामान जोड़ें</h3><p>फोटो, कीमत, मात्रा और कैटेगरी डालें।</p></article><article><b>03</b><span>🛒</span><h3>ग्राहक ऑर्डर करें</h3><p>ग्राहक सामान चुनकर ऑर्डर की जानकारी भेजें।</p></article></div></section>
+<section class="section info-grid" id="contact"><div><span class="eyebrow">हमारा उद्देश्य</span><h2>किसान खुश, ग्राहक खुश!</h2><p>KISAAN BAZAAR किसानों और ग्राहकों को जोड़ने के उद्देश्य से बनाया गया ऑनलाइन मार्केटप्लेस है। यहाँ विक्रेता अपनी उपज की जानकारी साझा कर सकते हैं और ग्राहक उनसे संपर्क कर सकते हैं।</p></div><div class="contact-card"><h3>📞 संपर्क / सहायता</h3><p>ऑर्डर, किसान रजिस्ट्रेशन या वेबसाइट से जुड़ी मदद के लिए नीचे दिए फॉर्म से संदेश भेजें।</p><a href="#sell">किसान रजिस्ट्रेशन पर जाएँ →</a><small>अपना वास्तविक फोन नंबर और ईमेल एडमिन सेटिंग में जोड़ें।</small></div></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">🌾</span><span><b>KISAAN BAZAAR</b><small>किसान का अपना बाजार</small></span></a><p>© 2026 KISAAN BAZAAR. सभी अधिकार सुरक्षित।</p><small>यह शुरुआती वेबसाइट टेम्पलेट है। लाइव ऑर्डर, लॉगिन और भुगतान के लिए बैकएंड सेटअप आवश्यक है।</small></footer>
+
+<div class="modal hidden" id="farmerModal" role="dialog" aria-modal="true" aria-labelledby="farmerTitle"><div class="modal-card"><button class="close" data-close="farmerModal">×</button><span class="eyebrow">विक्रेता पंजीकरण</span><h2 id="farmerTitle">किसान रजिस्ट्रेशन और सामान जोड़ें</h2><form id="farmerForm">
+<label>पूरा नाम<input name="name" required placeholder="अपना नाम"></label>
+<div class="two"><label>मोबाइल नंबर<input name="phone" required inputmode="tel" pattern="[0-9+\-\s]{10,15}" placeholder="10 अंकों का नंबर"></label><label>गाँव / शहर<input name="city" required placeholder="गाँव, जिला"></label></div>
+<label>सामान का नाम<input name="product" required placeholder="जैसे टमाटर, गेहूँ, आम"></label>
+<div class="two"><label>कैटेगरी<select name="category" required id="farmerCategory"></select></label><label>कीमत (₹ प्रति इकाई)<input name="price" type="number" min="1" step="0.01" required placeholder="जैसे 30"></label></div>
+<div class="two"><label>मात्रा<input name="quantity" required placeholder="जैसे 50 किलो"></label><label>फोटो का लिंक (वैकल्पिक)<input name="image" type="url" placeholder="https://..."></label></div>
+<label>सामान का विवरण<textarea name="description" rows="3" placeholder="गुणवत्ता, उपलब्धता आदि"></textarea></label>
+<button class="primary full" type="submit">रजिस्ट्रेशन / लिस्टिंग भेजें</button><p class="form-note">डेमो मोड में जानकारी इसी ब्राउज़र में सेव होगी। सभी ग्राहकों को दिखाने के लिए Supabase कनेक्शन करना होगा।</p>
+</form></div></div>
+<div class="modal hidden" id="cartModal" role="dialog" aria-modal="true"><div class="modal-card"><button class="close" data-close="cartModal">×</button><span class="eyebrow">आपकी खरीदारी</span><h2>आपका कार्ट</h2><div id="cartItems"></div><div class="cart-total"><b>कुल अनुमानित राशि</b><strong id="cartTotal">₹0</strong></div><form id="orderForm"><h3>ऑर्डर की जानकारी</h3><label>आपका नाम<input name="customer" required></label><label>मोबाइल नंबर<input name="phone" required inputmode="tel"></label><label>डिलीवरी का पता<input name="address" required></label><button class="primary full" type="submit">ऑर्डर अनुरोध भेजें</button><p class="form-note">डेमो मोड: ऑर्डर इस डिवाइस में दर्ज होगा। लाइव ऑर्डर के लिए डेटाबेस और विक्रेता संपर्क सेट करना होगा।</p></form></div></div>
+<div class="toast hidden" id="toast"></div>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
